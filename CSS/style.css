@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: linear-gradient(135deg, #e7f1df, #fdf4e5);
+    color: #183b2a;
+    padding: 30px 15px;
+}
+
+/* Invitation */
+.invitation {
+    max-width: 520px;
+    margin: 20px auto;
+    padding: 35px 28px;
+    text-align: center;
+    background: #fffdf5;
+    border: 2px solid #d9bd7b;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px #263e2920;
+    position: relative;
+    overflow: hidden;
+}
+
+.leaf-decoration {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #94702a;
+    font-weight: bold;
+}
+
+.invitation h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 8vw, 54px);
+    font-style: italic;
+    color: #175535;
+    margin: 20px 0 10px;
+}
+
+.invitation h3 {
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.photo-frame {
+    background: #e9f2e4;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.photo-frame h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.event-details {
+    text-align: left;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.event-details p {
+    margin: 16px 0;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.message {
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin: 25px 0;
+    line-height: 1.7;
+    color: #76552b;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    background: #185536;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2b743c;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px #173b2530;
+}
+
+/* Presentation screen */
+.presentation {
+    display: none;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #fffdf7;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px #263e2920;
+}
+
+.back-btn {
+    background: #405c4a;
+    margin-bottom: 25px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(135deg, #e3f1df, #dcecf8);
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.main-header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(26px, 5vw, 42px);
+    margin-bottom: 15px;
+}
+
+.main-header h1 span {
+    color: #b18a41;
+}
+
+.main-header p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Website cards */
+.website-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.website-card {
+    flex: 1 1 300px;
+    padding: 25px;
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.website-card:hover {
+    transform: translateY(-5px);
+}
+
+.eco-card {
+    background: linear-gradient(145deg, #eff7e9, #dcebd8);
+    border: 1px solid #c4dcc0;
+}
+
+.travel-card {
+    background: linear-gradient(145deg, #eef7ff, #d9eafa);
+    border: 1px solid #bfd8ef;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    font-size: 40px;
+}
+
+.logo h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.eco-logo h2 {
+    color: #216239;
+}
+
+.travel-logo h2 {
+    color: #17446b;
+}
+
+.topic-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px #0002;
+    margin-bottom: 20px;
+}
+
+.website-card h3 {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.website-card > p:not(.slogan) {
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.website-card ul {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.website-card li {
+    margin: 13px 0;
+    font-size: 14px;
+}
+
+.slogan {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 10px 10px;
+    line-height: 2;
+    font-family: Georgia, serif;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .invitation,
+    .presentation {
+        padding: 20px 15px;
+    }
+
+    .event-details p {
+        font-size: 13px;
+    }
+
+    .website-card {
+        padding: 18px;
+    }
+
+    .topic-image {
+        height: 190px;
+    }
+}
